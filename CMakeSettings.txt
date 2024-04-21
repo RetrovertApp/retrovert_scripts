@@ -1,0 +1,12 @@
+cmake_minimum_required(VERSION 3.10)
+set(CMAKE_BINARY_OUTPUT_DIRECTORY "../../bin" CACHE PATH "Output directory for runtime binaries")
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "../../bin/plugins" CACHE PATH "Output directory for runtime binaries")
+
+# Function to set custom library extension
+function(set_custom_library_extension target)
+  if(TARGET ${target})
+    set_target_properties(${target} PROPERTIES SUFFIX ".rvp")
+  else()
+    message(WARNING "Target ${target} does not exist.")
+  endif()
+endfunction()
