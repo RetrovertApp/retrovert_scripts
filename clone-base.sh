@@ -1,3 +1,3 @@
 #/bin/bash
 
-python retrovert_scripts/clone-base.py
+python3 retrovert_scripts/clone-base.py

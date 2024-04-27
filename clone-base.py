@@ -6,6 +6,8 @@ repositories = [
     "retrovert-core",
     "core-loader",
     "libopenmpt_playback",
+    "miniaudio_output",
+    "miniaudio_resampler",
 ]
 
 def clone_repo(repo):
